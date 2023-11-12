@@ -81,7 +81,7 @@ export const Hero = () => {
   return (
     <Wrapper>
       <Container>
-        <ProfileImage src="src/assets/images/Avatar.jpeg" alt="avatar" />
+        <ProfileImage src="./images/Avatar.jpeg" alt="avatar" />
         <ProfileContainer>
           <Title>Software Engineer</Title>
           <Name>Chao Chen</Name>
