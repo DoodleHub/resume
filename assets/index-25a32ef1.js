@@ -101,7 +101,7 @@ Error generating stack: `+l.message+`
   left: 0;
   height: 125px;
   background: linear-gradient(to right bottom, #f5f3f0 50%, white 50%);
-`,$m=()=>N.jsxs(_m,{children:[N.jsxs(Pm,{children:[N.jsx(Nm,{src:"src/assets/images/Avatar.jpeg",alt:"avatar"}),N.jsxs(Lm,{children:[N.jsx(Tm,{children:"Software Engineer"}),N.jsx(zm,{children:"Chao Chen"}),N.jsx(Rm,{children:N.jsx("a",{href:"mailto: chaochen@live.com",children:"CONTACT ME"})})]})]}),N.jsx(Im,{})]}),Om=A.div`
+`,$m=()=>N.jsxs(_m,{children:[N.jsxs(Pm,{children:[N.jsx(Nm,{src:"./images/Avatar.jpeg",alt:"avatar"}),N.jsxs(Lm,{children:[N.jsx(Tm,{children:"Software Engineer"}),N.jsx(zm,{children:"Chao Chen"}),N.jsx(Rm,{children:N.jsx("a",{href:"mailto: chaochen@live.com",children:"CONTACT ME"})})]})]}),N.jsx(Im,{})]}),Om=A.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
