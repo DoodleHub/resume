@@ -2,7 +2,6 @@ import styled, { createGlobalStyle } from "styled-components";
 
 import { Hero } from "./components/Hero/Hero";
 import { Skillset } from "./components/Skillset/Skillset";
-import { RecentWorks } from "./components/RecentWorks/RecentWorks";
 import { AboutMe } from "./components/AboutMe/AboutMe";
 import { Experiences } from "./components/Experiences/Experiences";
 import { Education } from "./components/Education/Education";
