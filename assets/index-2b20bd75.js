@@ -49,11 +49,22 @@ Error generating stack: `+l.message+`
   align-items: center;
   max-height: 747px;
   padding: 180px 165px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    padding: 72px 24px 140px 24px;
+  }
 `,Nm=A.img`
   border-radius: 175px;
   height: 350px;
   width: 350px;
+
+  @media screen and (max-width: 1024px) {
+    width: 150px;
+    height: 150px;
+  }
 `,Tm=A.span`
   font-family: PT Sans Narrow;
   font-size: 18px;
@@ -67,6 +78,11 @@ Error generating stack: `+l.message+`
   line-height: 112px;
   filter: brightness(90%);
   letter-spacing: -2.17px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 72px;
+    line-height: 72px;
+  }
 `,Rm=A.div`
   display: flex;
   justify-content: center;
@@ -89,11 +105,16 @@ Error generating stack: `+l.message+`
     cursor: pointer;
     filter: brightness(90%);
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+  }
 `,Lm=A.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 635px;
 `,Im=A.div`
   position: absolute;
   width: 100%;
@@ -180,10 +201,20 @@ Error generating stack: `+l.message+`
   font-family: Playfair Display;
   font-weight: 900;
   gap: 40px;
+
+  @media screen and (max-width: 1024px) {
+    height: 400px;
+    gap: 8px;
+    padding: 12px;
+  }
 `,bm=A.span`
   font-size: 66px;
   line-height: 82px;
   letter-spacing: -1.14px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 48px;
+  }
 `,e0=A.span`
   font-size: 36px;
   line-height: 46px;
@@ -192,6 +223,21 @@ Error generating stack: `+l.message+`
   a {
     color: #0699a6;
   }
+
+  a:first-child:after {
+    content: " | ";
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a:first-child:after {
+      content: "";
+    }
+  }
 `,t0=A.div`
   position: absolute;
   width: 100%;
@@ -199,7 +245,7 @@ Error generating stack: `+l.message+`
   left: 0;
   height: 125px;
   background: linear-gradient(to right bottom, white 50%, #f5f3f0 50%);
-`,n0=()=>N.jsxs(qm,{children:[N.jsx(t0,{}),N.jsx(bm,{children:"Get in touch!"}),N.jsxs(e0,{children:[N.jsx("a",{href:"mailto: chaochen@live.com",children:"chaochen@live.com"})," |"," ",N.jsx("a",{href:"tel: 917-250-8137",children:"917.250.8137"})]})]}),r0=Cm`
+`,n0=()=>N.jsxs(qm,{children:[N.jsx(t0,{}),N.jsx(bm,{children:"Get in touch!"}),N.jsxs(e0,{children:[N.jsx("a",{href:"mailto: chaochen@live.com",children:"chaochen@live.com"}),N.jsx("a",{href:"tel: 917-250-8137",children:"917.250.8137"})]})]}),r0=Cm`
   * {
     padding: 0;
     margin: 0;
@@ -219,19 +265,40 @@ Error generating stack: `+l.message+`
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `,l0=A.div`
   padding: 90px 165px;
   display: flex;
   gap: 125px;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    padding: 36px 24px;
+    flex-direction: column-reverse;
+    gap: 72px;
+  }
 `,o0=A.div`
   display: flex;
   flex-direction: column;
   gap: 100px;
-  min-width: 350px;
+  width: 35%;
   font-family: PT Sans Narrow;
+
+  @media screen and (max-width: 1024px) {
+    gap: 24px;
+    width: 100%;
+  }
 `,u0=A.div`
   display: flex;
   flex-direction: column;
   gap: 66px;
-  min-width: 635px;
+  width: 65%;
+
+  @media screen and (max-width: 1024px) {
+    gap: 24px;
+    width: 100%;
+  }
 `,s0=()=>N.jsxs(i0,{children:[N.jsx(r0,{}),N.jsx($m,{}),N.jsxs(l0,{children:[N.jsx(o0,{children:N.jsx(Bm,{})}),N.jsxs(u0,{children:[N.jsx(Wm,{}),N.jsx(Xm,{}),N.jsx(Jm,{})]})]}),N.jsx(n0,{})]});Ql.createRoot(document.getElementById("root")).render(N.jsx(Ze.StrictMode,{children:N.jsx(s0,{})}));
