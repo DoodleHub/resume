@@ -11,13 +11,24 @@ const Container = styled.div`
   align-items: center;
   max-height: 747px;
   padding: 180px 165px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    padding: 72px 24px 140px 24px;
+  }
 `;
 
 const ProfileImage = styled.img`
   border-radius: 175px;
   height: 350px;
   width: 350px;
+
+  @media screen and (max-width: 1024px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 const Title = styled.span`
@@ -35,6 +46,11 @@ const Name = styled.span`
   line-height: 112px;
   filter: brightness(90%);
   letter-spacing: -2.17px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 72px;
+    line-height: 72px;
+  }
 `;
 
 const ContactButton = styled.div`
@@ -59,13 +75,18 @@ const ContactButton = styled.div`
     cursor: pointer;
     filter: brightness(90%);
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+  }
 `;
 
 const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 635px;
 `;
 
 const DiagonalBackground = styled.div`

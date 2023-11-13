@@ -11,12 +11,22 @@ const Wrapper = styled.div`
   font-family: Playfair Display;
   font-weight: 900;
   gap: 40px;
+
+  @media screen and (max-width: 1024px) {
+    height: 400px;
+    gap: 8px;
+    padding: 12px;
+  }
 `;
 
 const Title = styled.span`
   font-size: 66px;
   line-height: 82px;
   letter-spacing: -1.14px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 48px;
+  }
 `;
 
 const Contacts = styled.span`
@@ -26,6 +36,21 @@ const Contacts = styled.span`
 
   a {
     color: #0699a6;
+  }
+
+  a:first-child:after {
+    content: " | ";
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a:first-child:after {
+      content: "";
+    }
   }
 `;
 
@@ -44,7 +69,7 @@ export const Footer = () => {
       <DiagonalBackground />
       <Title>Get in touch!</Title>
       <Contacts>
-        <a href="mailto: chaochen@live.com">chaochen@live.com</a> |{" "}
+        <a href="mailto: chaochen@live.com">chaochen@live.com</a>
         <a href="tel: 917-250-8137">917.250.8137</a>
       </Contacts>
     </Wrapper>

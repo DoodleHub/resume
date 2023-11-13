@@ -29,27 +29,48 @@ const Wrapper = styled.div`
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 const StyledBody = styled.div`
   padding: 90px 165px;
   display: flex;
   gap: 125px;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    padding: 36px 24px;
+    flex-direction: column-reverse;
+    gap: 72px;
+  }
 `;
 
 const LeftColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 100px;
-  min-width: 350px;
+  width: 35%;
   font-family: PT Sans Narrow;
+
+  @media screen and (max-width: 1024px) {
+    gap: 24px;
+    width: 100%;
+  }
 `;
 
 const RightColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 66px;
-  min-width: 635px;
+  width: 65%;
+
+  @media screen and (max-width: 1024px) {
+    gap: 24px;
+    width: 100%;
+  }
 `;
 
 export const App = () => {
