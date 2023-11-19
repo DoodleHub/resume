@@ -9,9 +9,11 @@ const PROJECTS = [
     type: "Web",
     stack: ["React", "styled-components"],
     url: "https://github.com/cc-sandbox/movie-browser",
+    description:
+      "A web-based movie browser that allows users to explore films, unveiling cast details and ratings.",
   },
   {
-    title: "Crwn Clothing (e-commerce)",
+    title: "Crwn Clothing",
     type: "Web",
     stack: [
       "React",
@@ -22,21 +24,27 @@ const PROJECTS = [
       "Firebase",
     ],
     url: "https://github.com/cc-sandbox/crwn-clothing",
+    description:
+      "A web-based e-commerce application that allows users to facilitate clothing exploration and purchasing experiences.",
   },
   {
-    title: "Employee Directory (frontend)",
+    title: "Employee Directory (Frontend)",
     type: "Web",
     stack: ["React", "styled-components", "TypeScript"],
     url: "https://github.com/cc-sandbox/employee-dir-frontend",
+    description:
+      "A web-based employee directory that allows access to organizational information.",
   },
   {
-    title: "Employee Directory (backend)",
+    title: "Employee Directory (Backend)",
     type: "Server",
     stack: ["Node.js", "Express.js", "MongoDB", "Swagger API"],
     url: "https://github.com/cc-sandbox/employee-dir-backend",
+    description:
+      "A web server that serves data to the Employee Directory application.",
   },
   {
-    title: "Meals To Go (food delivery)",
+    title: "Meals To Go",
     type: "Mobile",
     stack: [
       "React Native",
@@ -47,37 +55,41 @@ const PROJECTS = [
       "Google Maps API",
     ],
     url: "https://github.com/cc-sandbox/meals-to-go",
+    description:
+      "A mobile food delivery app enabling users to locate restaurants on a map, place orders, and make secure payments.",
   },
   {
     title: "Fantasy Stock Market",
     type: "Mobile",
     stack: ["React Native", "Expo", "Firebase", "Tailwind CSS"],
     url: "https://github.com/cc-sandbox/fantasy-stock-market",
+    description:
+      "A mobile fantasy stock draft app, fostering real-time engagement by enabling users to participate in live stock drafts with peers, complemented by an integrated social media feature for market discussions and community interaction.",
   },
 ];
 
 const Container = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 20px;
-`;
-
-const ProjectItemContainer = styled.li`
-  display: flex;
-  align-items: start;
-  gap: 8px;
-  line-height: 20px;
+  gap: 36px;
 
   a {
     font-size: 20px;
     font-weight: 700;
     color: #0699a6;
   }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
 `;
 
-const ProjectInfo = styled.div`
-  display: flex
-  flex-direction: column;
+const Stack = styled.div`
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
 `;
 
 export const Projects = () => {
@@ -85,13 +97,15 @@ export const Projects = () => {
     <Section subTitle="PROJECTS">
       <Container>
         {PROJECTS.map((project, idx) => (
-          <ProjectItemContainer key={idx}>
-            <Badge>{project.type}</Badge>
-            <ProjectInfo>
-              <a href={project.url}>{project.title}</a>
-              <p>{`stack: ${project.stack.join(", ")}`}</p>
-            </ProjectInfo>
-          </ProjectItemContainer>
+          <li key={idx}>
+            <a href={project.url}>{project.title}</a>
+            <p>{project.description}</p>
+            <Stack>
+              {project.stack.map((s) => (
+                <Badge>{s}</Badge>
+              ))}
+            </Stack>
+          </li>
         ))}
       </Container>
     </Section>

@@ -53,7 +53,7 @@ const LeftColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 100px;
-  width: 40%;
+  width: 35%;
   font-family: PT Sans Narrow;
 
   @media screen and (max-width: 1024px) {
@@ -66,7 +66,7 @@ const RightColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 66px;
-  width: 60%;
+  width: 65%;
 
   @media screen and (max-width: 1024px) {
     gap: 24px;

@@ -5,9 +5,9 @@ const Wrapper = styled.span`
   color: white;
   border-radius: 4px;
   font-size: 14px;
-  border: 1px solid;
-  min-width: 48px;
+  padding: 1px 4px;
   text-align: center;
+  white-space: nowrap;
 `;
 
 interface BadgeProps {
