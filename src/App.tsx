@@ -6,6 +6,7 @@ import { AboutMe } from "./components/AboutMe/AboutMe";
 import { Experiences } from "./components/Experiences/Experiences";
 import { Education } from "./components/Education/Education";
 import { Footer } from "./components/Footer/Footer";
+import { Projects } from "./components/Projects/Projects";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -52,7 +53,7 @@ const LeftColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 100px;
-  width: 35%;
+  width: 40%;
   font-family: PT Sans Narrow;
 
   @media screen and (max-width: 1024px) {
@@ -65,7 +66,7 @@ const RightColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 66px;
-  width: 65%;
+  width: 60%;
 
   @media screen and (max-width: 1024px) {
     gap: 24px;
@@ -81,7 +82,7 @@ export const App = () => {
       <StyledBody>
         <LeftColumn>
           <Skillset />
-          {/* <RecentWorks /> */}
+          <Projects />
         </LeftColumn>
         <RightColumn>
           <AboutMe />
