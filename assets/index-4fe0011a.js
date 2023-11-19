@@ -250,28 +250,30 @@ Error generating stack: `+l.message+`
   color: white;
   border-radius: 4px;
   font-size: 14px;
-  border: 1px solid;
-  min-width: 48px;
+  padding: 1px 4px;
   text-align: center;
-`,i0=({children:e})=>N.jsx(r0,{children:e}),l0=[{title:"Movie Browser",type:"Web",stack:["React","styled-components"],url:"https://github.com/cc-sandbox/movie-browser"},{title:"Crwn Clothing (e-commerce)",type:"Web",stack:["React","Redux","styled-components","TypeScript","Stripe","Firebase"],url:"https://github.com/cc-sandbox/crwn-clothing"},{title:"Employee Directory (frontend)",type:"Web",stack:["React","styled-components","TypeScript"],url:"https://github.com/cc-sandbox/employee-dir-frontend"},{title:"Employee Directory (backend)",type:"Server",stack:["Node.js","Express.js","MongoDB","Swagger API"],url:"https://github.com/cc-sandbox/employee-dir-backend"},{title:"Meals To Go (food delivery)",type:"Mobile",stack:["React Native","Expo","styled-components","Firebase","Stripe","Google Maps API"],url:"https://github.com/cc-sandbox/meals-to-go"},{title:"Fantasy Stock Market",type:"Mobile",stack:["React Native","Expo","Firebase","Tailwind CSS"],url:"https://github.com/cc-sandbox/fantasy-stock-market"}],o0=O.ul`
+  white-space: nowrap;
+`,i0=({children:e})=>N.jsx(r0,{children:e}),l0=[{title:"Movie Browser",type:"Web",stack:["React","styled-components"],url:"https://github.com/cc-sandbox/movie-browser",description:"A web-based movie browser that allows users to explore films, unveiling cast details and ratings."},{title:"Crwn Clothing",type:"Web",stack:["React","Redux","styled-components","TypeScript","Stripe","Firebase"],url:"https://github.com/cc-sandbox/crwn-clothing",description:"A web-based e-commerce application that allows users to facilitate clothing exploration and purchasing experiences."},{title:"Employee Directory (Frontend)",type:"Web",stack:["React","styled-components","TypeScript"],url:"https://github.com/cc-sandbox/employee-dir-frontend",description:"A web-based employee directory that allows access to organizational information."},{title:"Employee Directory (Backend)",type:"Server",stack:["Node.js","Express.js","MongoDB","Swagger API"],url:"https://github.com/cc-sandbox/employee-dir-backend",description:"A web server that serves data to the Employee Directory application."},{title:"Meals To Go",type:"Mobile",stack:["React Native","Expo","styled-components","Firebase","Stripe","Google Maps API"],url:"https://github.com/cc-sandbox/meals-to-go",description:"A mobile food delivery app enabling users to locate restaurants on a map, place orders, and make secure payments."},{title:"Fantasy Stock Market",type:"Mobile",stack:["React Native","Expo","Firebase","Tailwind CSS"],url:"https://github.com/cc-sandbox/fantasy-stock-market",description:"A mobile fantasy stock draft app, fostering real-time engagement by enabling users to participate in live stock drafts with peers, complemented by an integrated social media feature for market discussions and community interaction."}],o0=O.ul`
   display: flex;
   flex-direction: column;
-  gap: 20px;
-`,u0=O.li`
-  display: flex;
-  align-items: start;
-  gap: 8px;
-  line-height: 20px;
+  gap: 36px;
 
   a {
     font-size: 20px;
     font-weight: 700;
     color: #0699a6;
   }
-`,s0=O.div`
-  display: flex
-  flex-direction: column;
-`,a0=()=>N.jsx(On,{subTitle:"PROJECTS",children:N.jsx(o0,{children:l0.map((e,t)=>N.jsxs(u0,{children:[N.jsx(i0,{children:e.type}),N.jsxs(s0,{children:[N.jsx("a",{href:e.url,children:e.title}),N.jsx("p",{children:`stack: ${e.stack.join(", ")}`})]})]},t))})}),c0=Cm`
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+`,u0=O.div`
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+`,s0=()=>N.jsx(On,{subTitle:"PROJECTS",children:N.jsx(o0,{children:l0.map((e,t)=>N.jsxs("li",{children:[N.jsx("a",{href:e.url,children:e.title}),N.jsx("p",{children:e.description}),N.jsx(u0,{children:e.stack.map(n=>N.jsx(i0,{children:n}))})]},t))})}),a0=Cm`
   * {
     padding: 0;
     margin: 0;
@@ -285,7 +287,7 @@ Error generating stack: `+l.message+`
       text-decoration: none;
     }
   }
-`,f0=O.div`
+`,c0=O.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -295,7 +297,7 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 1024px) {
     width: 100%;
   }
-`,d0=O.div`
+`,f0=O.div`
   padding: 90px 165px;
   display: flex;
   gap: 125px;
@@ -306,25 +308,25 @@ Error generating stack: `+l.message+`
     flex-direction: column-reverse;
     gap: 72px;
   }
-`,p0=O.div`
+`,d0=O.div`
   display: flex;
   flex-direction: column;
   gap: 100px;
-  width: 40%;
+  width: 35%;
   font-family: PT Sans Narrow;
 
   @media screen and (max-width: 1024px) {
     gap: 24px;
     width: 100%;
   }
-`,h0=O.div`
+`,p0=O.div`
   display: flex;
   flex-direction: column;
   gap: 66px;
-  width: 60%;
+  width: 65%;
 
   @media screen and (max-width: 1024px) {
     gap: 24px;
     width: 100%;
   }
-`,m0=()=>N.jsxs(f0,{children:[N.jsx(c0,{}),N.jsx($m,{}),N.jsxs(d0,{children:[N.jsxs(p0,{children:[N.jsx(Bm,{}),N.jsx(a0,{})]}),N.jsxs(h0,{children:[N.jsx(Vm,{}),N.jsx(Xm,{}),N.jsx(Jm,{})]})]}),N.jsx(n0,{})]});Ql.createRoot(document.getElementById("root")).render(N.jsx(Ze.StrictMode,{children:N.jsx(m0,{})}));
+`,h0=()=>N.jsxs(c0,{children:[N.jsx(a0,{}),N.jsx($m,{}),N.jsxs(f0,{children:[N.jsxs(d0,{children:[N.jsx(Bm,{}),N.jsx(s0,{})]}),N.jsxs(p0,{children:[N.jsx(Vm,{}),N.jsx(Xm,{}),N.jsx(Jm,{})]})]}),N.jsx(n0,{})]});Ql.createRoot(document.getElementById("root")).render(N.jsx(Ze.StrictMode,{children:N.jsx(h0,{})}));
