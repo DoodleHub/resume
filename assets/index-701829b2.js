@@ -224,19 +224,11 @@ Error generating stack: `+l.message+`
     color: #0699a6;
   }
 
-  a:first-child:after {
-    content: " | ";
-  }
-
   @media screen and (max-width: 1024px) {
     font-size: 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    a:first-child:after {
-      content: "";
-    }
   }
 `,t0=O.div`
   position: absolute;
@@ -245,7 +237,7 @@ Error generating stack: `+l.message+`
   left: 0;
   height: 125px;
   background: linear-gradient(to right bottom, white 50%, #f5f3f0 50%);
-`,n0=()=>N.jsxs(qm,{children:[N.jsx(t0,{}),N.jsx(bm,{children:"Get in touch!"}),N.jsxs(e0,{children:[N.jsx("a",{href:"mailto: chaochen@live.com",children:"chaochen@live.com"}),N.jsx("a",{href:"tel: 917-250-8137",children:"917.250.8137"})]})]}),r0=O.span`
+`,n0=()=>N.jsxs(qm,{children:[N.jsx(t0,{}),N.jsx(bm,{children:"Get in touch!"}),N.jsx(e0,{children:N.jsx("a",{href:"mailto: chaochen@live.com",children:"chaochen@live.com"})})]}),r0=O.span`
   display: flex;
   align-items: center;
   justify-content: center;
