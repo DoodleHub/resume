@@ -22,16 +22,15 @@ export const AboutMe = () => {
     <Section title="About Me">
       <Container>
         <span>
-          Greetings! I'm a seasoned Senior Frontend Engineer passionate about
-          crafting seamless and visually stunning user experiences. With a
-          strong foundation in HTML, CSS, and JavaScript, I specialize in modern
-          frameworks like React, delivering scalable and responsive
-          applications. My collaborative spirit shines in cross-functional
-          teams, where I communicate technical concepts effectively. Committed
-          to high-quality code and proactive problem-solving, I stay current
-          with industry trends to ensure cutting-edge contributions. Let's
-          connect and explore how my expertise can elevate your team and
-          projects.
+          Hello! I'm an experienced Senior Software Engineer with a passion for
+          creating user-friendly and visually appealing experiences. Proficient
+          in HTML, CSS, and JavaScript, I specialize in modern frameworks like
+          React to build scalable and responsive applications. I thrive in
+          collaborative, cross-functional teams, effectively communicating
+          technical concepts. Committed to delivering high-quality code and
+          proactive problem-solving, I stay updated with industry trends for
+          cutting-edge contributions. I look forward to connecting and
+          discussing how my skills can benefit your team and projects.
         </span>
         <Divider />
       </Container>

@@ -33,7 +33,7 @@ const PROJECTS = [
     stack: ["React", "styled-components", "TypeScript"],
     url: "https://github.com/cc-sandbox/employee-dir-frontend",
     description:
-      "A web-based employee directory that allows access to organizational information.",
+      "A web-based employee directory that allows access to a random sample set of employee information.",
   },
   {
     title: "Employee Directory (Backend)",
@@ -41,7 +41,7 @@ const PROJECTS = [
     stack: ["Node.js", "Express.js", "MongoDB", "Swagger API"],
     url: "https://github.com/cc-sandbox/employee-dir-backend",
     description:
-      "A web server that serves data to the Employee Directory application.",
+      "A web server providing REST API endpoints for access and management of the employee directory application.",
   },
   {
     title: "Meals To Go",
@@ -88,6 +88,7 @@ const Container = styled.ul`
 
 const Stack = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
   margin-top: 4px;
 `;
@@ -96,13 +97,13 @@ export const Projects = () => {
   return (
     <Section subTitle="PROJECTS">
       <Container>
-        {PROJECTS.map((project, idx) => (
-          <li key={idx}>
+        {PROJECTS.map((project) => (
+          <li key={project.title}>
             <a href={project.url}>{project.title}</a>
             <p>{project.description}</p>
             <Stack>
-              {project.stack.map((s) => (
-                <Badge>{s}</Badge>
+              {project.stack.map((s, idx) => (
+                <Badge key={idx}>{s}</Badge>
               ))}
             </Stack>
           </li>

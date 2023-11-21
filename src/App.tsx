@@ -57,7 +57,7 @@ const LeftColumn = styled.div`
   font-family: PT Sans Narrow;
 
   @media screen and (max-width: 1024px) {
-    gap: 24px;
+    gap: 72px;
     width: 100%;
   }
 `;

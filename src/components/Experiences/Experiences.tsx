@@ -78,10 +78,14 @@ export const Experiences = () => {
     <Section title="Experience">
       <Container>
         {EXPERIENCES.map((experience) => (
-          <Section subTitle={experience.title} dateText={experience.dateText}>
+          <Section
+            key={experience.title}
+            subTitle={experience.title}
+            dateText={experience.dateText}
+          >
             <ResponsibilitiesContainer>
-              {experience.responsibilities.map((responsibility) => (
-                <li>{responsibility}</li>
+              {experience.responsibilities.map((responsibility, idx) => (
+                <li key={idx}>{responsibility}</li>
               ))}
             </ResponsibilitiesContainer>
           </Section>

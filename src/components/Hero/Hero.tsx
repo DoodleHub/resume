@@ -104,7 +104,7 @@ export const Hero = () => {
       <Container>
         <ProfileImage src="./images/Avatar.jpeg" alt="avatar" />
         <ProfileContainer>
-          <Title>Software Engineer</Title>
+          <Title>Senior Software Engineer</Title>
           <Name>Chao Chen</Name>
           <ContactButton>
             <a href="mailto: chaochen@live.com">CONTACT ME</a>
