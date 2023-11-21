@@ -8,7 +8,7 @@ const PROJECTS = [
     title: "Movie Browser",
     type: "Web",
     stack: ["React", "styled-components"],
-    url: "https://github.com/cc-sandbox/movie-browser",
+    url: "https://github.com/doodlehub/movie-browser",
     description:
       "A web-based movie browser that allows users to explore films, unveiling cast details and ratings.",
   },
@@ -23,7 +23,7 @@ const PROJECTS = [
       "Stripe",
       "Firebase",
     ],
-    url: "https://github.com/cc-sandbox/crwn-clothing",
+    url: "https://github.com/doodlehub/crwn-clothing",
     description:
       "A web-based e-commerce application that allows users to facilitate clothing exploration and purchasing experiences.",
   },
@@ -31,7 +31,7 @@ const PROJECTS = [
     title: "Employee Directory (Frontend)",
     type: "Web",
     stack: ["React", "styled-components", "TypeScript"],
-    url: "https://github.com/cc-sandbox/employee-dir-frontend",
+    url: "https://github.com/doodlehub/employee-dir-frontend",
     description:
       "A web-based employee directory that allows access to a random sample set of employee information.",
   },
@@ -39,7 +39,7 @@ const PROJECTS = [
     title: "Employee Directory (Backend)",
     type: "Server",
     stack: ["Node.js", "Express.js", "MongoDB", "Swagger API"],
-    url: "https://github.com/cc-sandbox/employee-dir-backend",
+    url: "https://github.com/doodlehub/employee-dir-backend",
     description:
       "A web server providing REST API endpoints for access and management of the employee directory application.",
   },
@@ -54,7 +54,7 @@ const PROJECTS = [
       "Stripe",
       "Google Maps API",
     ],
-    url: "https://github.com/cc-sandbox/meals-to-go",
+    url: "https://github.com/doodlehub/meals-to-go",
     description:
       "A mobile food delivery app enabling users to locate restaurants on a map, place orders, and make secure payments.",
   },
@@ -62,7 +62,7 @@ const PROJECTS = [
     title: "Fantasy Stock Market",
     type: "Mobile",
     stack: ["React Native", "Expo", "Firebase", "Tailwind CSS"],
-    url: "https://github.com/cc-sandbox/fantasy-stock-market",
+    url: "https://github.com/doodlehub/fantasy-stock-market",
     description:
       "A mobile fantasy stock draft app, fostering real-time engagement by enabling users to participate in live stock drafts with peers, complemented by an integrated social media feature for market discussions and community interaction.",
   },
@@ -99,7 +99,9 @@ export const Projects = () => {
       <Container>
         {PROJECTS.map((project) => (
           <li key={project.title}>
-            <a href={project.url}>{project.title}</a>
+            <span>
+              <a href={project.url}>{project.title}</a>
+            </span>
             <p>{project.description}</p>
             <Stack>
               {project.stack.map((s, idx) => (

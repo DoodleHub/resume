@@ -7,11 +7,10 @@ const EXPERIENCES = [
     title: "Senior Software Engineer - Launch by NTT DATA",
     dateText: "Jun. 2023 - Present",
     responsibilities: [
-      "Led the design and implementation of responsive and intuitive user interfaces for insurance applications, ensuring optimal user experience across various devices",
-      "Demonstrated mastery in frontend frameworks such as React, utilizing component-based architectures to streamline development and enhance code maintainability",
-      "Spearheaded the migration of legacy frontend systems such as Backbone.js and jQuery to React, resulting in improvements in development efficiency",
-      "Collaborated with backend teams to optimize API calls and improve overall frontend responsiveness",
-      "Implemented performance optimization techniques, including code splitting and lazy loading, resulting in reductions in page load times for critical workflows",
+      "Lead the design and implementation of responsive and intuitive user interfaces for insurance applications, ensuring optimal user experience across various devices",
+      "Demonstrate mastery in frontend frameworks such as React, utilizing component-based architectures to streamline development and enhance code maintainability",
+      "Spearhead the migration of legacy frontend systems such as Backbone.js and jQuery to React, resulting in improvements in development efficiency",
+      "Collaborate with backend teams to optimize API calls and improve overall frontend responsiveness",
     ],
   },
   {
@@ -19,8 +18,7 @@ const EXPERIENCES = [
     dateText: "Jan. 2022 - Jun. 2023",
     responsibilities: [
       "Developed and maintained responsive and user-friendly web applications using React, ensuring a seamless and intuitive user experience",
-      "Implemented complex UI features, leveraging state management libraries like Redux for efficient data flow and state synchronization",
-      "Designed and implemented reusable and modular components, promoting a component-based architecture that enhanced code maintainability and scalability",
+      "Implemented UI features, leveraging state management libraries like Redux for efficient data flow and state synchronization",
       "Implemented unit tests using tools like Jest and React Testing Library, resulting in reductions in production bugs",
     ],
   },
@@ -29,15 +27,15 @@ const EXPERIENCES = [
     dateText: "Jul. 2017 - Jan. 2022",
     responsibilities: [
       "Led the development of frontend and backend features for an in-house processing application, excelling in data conversion from platforms like Slack, Asana, Zendesk, Mobile, and Social Media into attorney-reviewed documents",
-      "Utilized third-party API services from providers such as Slack, Asana, and Zendesk for efficient data collection, contributing to the seamless integration of relevant information",
+      "Utilized third-party API services from providers such as Slack, Asana, and Zendesk for efficient data collection, contributing to the integration of relevant information",
     ],
   },
   {
     title: "Data Analyst — Transperfect Legal Solutions",
     dateText: "Mar. 2016 - Jul. 2017",
     responsibilities: [
-      "Developed and implemented efficient ETL pipelines for seamless data processing, encompassing extraction, transformation, and loading of diverse datasets",
-      "Utilized SQL expertise to query databases, optimized performance, and conducted thorough data analysis, producing valuable insights to drive decision-making processes",
+      "Developed and implemented ETL pipelines for data processing, encompassing extraction, transformation, and loading of diverse datasets",
+      "Utilized SQL to query databases, optimized performance, and conducted data analysis",
     ],
   },
 ];
