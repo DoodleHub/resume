@@ -38,19 +38,11 @@ const Contacts = styled.span`
     color: #0699a6;
   }
 
-  a:first-child:after {
-    content: " | ";
-  }
-
   @media screen and (max-width: 1024px) {
     font-size: 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    a:first-child:after {
-      content: "";
-    }
   }
 `;
 
@@ -70,7 +62,6 @@ export const Footer = () => {
       <Title>Get in touch!</Title>
       <Contacts>
         <a href="mailto: chaochen@live.com">chaochen@live.com</a>
-        <a href="tel: 917-250-8137">917.250.8137</a>
       </Contacts>
     </Wrapper>
   );
