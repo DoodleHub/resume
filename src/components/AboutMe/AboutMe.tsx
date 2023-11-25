@@ -27,10 +27,8 @@ export const AboutMe = () => {
           in HTML, CSS, and JavaScript, I specialize in modern frameworks like
           React to build scalable and responsive applications. I thrive in
           collaborative, cross-functional teams, effectively communicating
-          technical concepts. Committed to delivering high-quality code and
-          proactive problem-solving, I stay updated with industry trends for
-          cutting-edge contributions. I look forward to connecting and
-          discussing how my skills can benefit your team and projects.
+          technical concepts. I look forward to connecting you and learning more
+          about your team and projects.
         </span>
         <Divider />
       </Container>
